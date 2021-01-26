@@ -1,0 +1,154 @@
+ul {
+  background-color: green;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none; }
+
+.menu {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 10px; }
+  .menu a {
+    flex: 1;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    align-items: center;
+    margin: 20px; }
+
+li a:hover {
+  background-color: grey; }
+
+ul ul {
+  position: relative;
+  display: none; }
+
+ul li:hover ul {
+  display: block;
+  position: relative; }
+
+section {
+  text-align: center; }
+
+h2 {
+  color: grey; }
+
+.logo {
+  width: 150px;
+  height: 150px; }
+
+#remeraInicio {
+  width: 1500px;
+  height: 690px; }
+
+#fabricaInicio {
+  width: 200px;
+  height: 690px; }
+
+footer {
+  background-image: linear-gradient(to right, blue, grey);
+  text-align: center;
+  border-top: solid 3px;
+  color: black;
+  border-bottom: solid 3px;
+  color: black;
+  margin-top: 3px; }
+  footer .footer__instagram {
+    width: 30px;
+    height: 30px; }
+
+.Inicio {
+  display: flex;
+  align-items: flex-start;
+  background-color: green;
+  border-radius: 3px;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .Inicio .imagenMaquina {
+    margin-right: 1em;
+    width: 50em;
+    height: 26em; }
+
+#textoInicio {
+  font-size: 20px;
+  font-family: arial black;
+  color: white; }
+
+.contactanos {
+  text-align: left;
+  background-image: url("../imagenes/perchas.jpg");
+  background-size: cover;
+  font-family: 'adobe';
+  color: black;
+  text-decoration-color: white;
+  font-size: 150%;
+  word-spacing: 10px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.miCuenta {
+  background-color: green;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+main {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  grid-template-rows: 150px 1fr 1fr 75px;
+  grid-template-columns: 10px 5px;
+  grid-template-areas: "header header header"
+ "logo tabla tabla"
+ "footer footer footer "; }
+
+header {
+  grid-area: header; }
+
+footer {
+  grid-area: footer; }
+
+section #sectionLogo {
+  grid-area: logo; }
+
+.sectionTabla {
+  grid-area: tabla; }
+
+.sectionTabla__productos {
+  border-color: blue;
+  border-style: outset;
+  margin: auto; }
+  .sectionTabla__productos th {
+    color: white;
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: solid 5px;
+    color: yellow;
+    border-bottom: solid 5px;
+    color: yellow; }
+    .sectionTabla__productos th td {
+      background-color: grey; }
+
+.registrateForm {
+  text-align: left;
+  background-image: url("../imagenes/remeras.jpg");
+  background-size: cover;
+  opacity: 0.8;
+  color: blue;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 10px;  }
+
+.estiloIndex {
+  background-color: white; }
+
+@media (max-width: 768px) {
+  .estiloIndex {
+    background-color: black;
+    text-align: left; } }
